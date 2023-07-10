@@ -37,7 +37,7 @@ export const paymentverification = async (req, res) => {
     await setDoc(doc(db, collRefid, global.uid), {
       Paymentdetails},{merge:true}
     );
-    res.redirect("http://localhost:3000/account");
+    res.redirect("https://cusat-busbuddy.web.app/account");
   } else {
     res.status(400).json({ success: false });
   }
